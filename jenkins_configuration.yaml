@@ -83,7 +83,7 @@ jenkins:
       enableCaptcha: false
       users:
       - id: "admin"
-        password: admin@123
+        name: "admin"
         properties:
         - "apiToken"
         - "mailer"
@@ -113,7 +113,7 @@ jobs:
               }
           }
       } 
-  - url: https://raw.githubusercontent.com/sinajmon/seedpipe/main/seed.groovy
+  - url: https://raw.githubusercontent.com/sinajmon/seedorganization/main/seed.groovy
 globalCredentialsConfiguration:
   configuration:
     providerFilter: "none"
